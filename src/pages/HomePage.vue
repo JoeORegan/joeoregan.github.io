@@ -33,4 +33,42 @@
       />
     </div>
   </section>
+
+  <section class="project-strip">
+    <div class="project-strip__content">
+      <h2>Flappy Bird JS</h2>
+      <p>
+        JavaScript remake of Flappy Bird with canvas gameplay, score tracking,
+        and classic one-button controls.
+      </p>
+
+      <div class="project-strip__links">
+        <a
+          class="project-strip__link"
+          href="https://joeoregan.github.io/JS-FlappyBird/"
+          target="_blank"
+          rel="noopener"
+        >
+          Play Flappy Bird ↗
+        </a>
+        <br/>
+        <a
+          class="project-strip__link"
+          href="https://github.com/JoeORegan/JS-FlappyBird"
+          target="_blank"
+          rel="noopener"
+        >
+          Source Code ↗
+        </a>
+      </div>
+    </div>
+
+    <div class="project-strip__media">
+      <img
+        src="/images/flappybird/cover.png"
+        alt="Flappy Bird gameplay cover"
+        class="project-strip__image"
+      />
+    </div>
+  </section>
 </template>
