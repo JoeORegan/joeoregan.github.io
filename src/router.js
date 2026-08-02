@@ -3,6 +3,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import HomePage from "./pages/HomePage.vue";
 import UnityPage from "./pages/UnityPage.vue";
 import JavaScriptPage from "./pages/JavaScriptPage.vue";
+import SpaceQuestPage from "./pages/javascript/SpaceQuestPage.vue";
 import AngularPage from "./pages/AngularPage.vue";
 import Cocos2dxPage from "./pages/Cocos2dxPage.vue";
 import SdlPage from "./pages/SdlPage.vue";
@@ -12,7 +13,22 @@ import AboutPage from "./pages/AboutPage.vue";
 const routes = [
     { path: "/", name: "home", component: HomePage, meta: { title: "Home" } },
     { path: "/unity", name: "unity", component: UnityPage, meta: { title: "Unity" } },
-    { path: "/javascript", name: "javascript", component: JavaScriptPage, meta: { title: "JavaScript" } },
+
+    {
+        path: "/javascript",
+        name: "javascript",
+        component: JavaScriptPage,
+        meta: { title: "JavaScript" },
+        children: [
+            {
+                path: "spacequest",
+                name: "javascript-spacequest",
+                component: SpaceQuestPage,
+                meta: { title: "SpaceQuest" },
+            },
+        ],
+    },
+
     { path: "/angular", name: "angular", component: AngularPage, meta: { title: "Angular" } },
     { path: "/cocos2dx", name: "cocos2dx", component: Cocos2dxPage, meta: { title: "Cocos2D-X" } },
     { path: "/sdl", name: "sdl", component: SdlPage, meta: { title: "SDL" } },

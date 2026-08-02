@@ -174,3 +174,23 @@ body {
         justify-self: center;
     }
 }
+
+/* Global links: same colour for normal + visited */
+a,
+a:visited {
+    color: #c5ced8;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+a:hover,
+a:focus-visible {
+    color: #f1f5f9;
+}
+
+/* Keep top nav styling unchanged */
+.nav-link,
+.nav-link:visited {
+    color: var(--text);
+    text-decoration: none;
+}
