@@ -37,7 +37,7 @@
 
     <div class="project-strip__media">
       <img
-        src="/images/antibody/cover.png"
+        src="@/assets/antibody/cover.jpg"
         alt="Antibody JS cover art"
         class="project-strip__image"
       />
@@ -76,7 +76,7 @@
 
     <div class="project-strip__media">
       <img
-        src="/images/spacequest/cover.png"
+        src="@/assets/spacequest/cover.png"
         alt="Space Quest cover art"
         class="project-strip__image"
       />
@@ -118,8 +118,50 @@
 
     <div class="project-strip__media">
       <img
-        src="/images/flappybird/cover.png"
+        src="@/assets/flappybird/cover.png"
         alt="Flappy Bird gameplay cover"
+        class="project-strip__image"
+      />
+    </div>
+  </section>
+
+  <section class="project-strip">
+    <div class="project-strip__content">
+      <h2>Tetris</h2>
+      <p>
+        TypeScript remake of Tetris with canvas gameplay, score tracking,
+        and classic one-button controls.
+      </p>
+
+      <RouterLink class="project-strip__link" to="/angular/tetris">
+        View Tetris page →
+      </RouterLink>
+      <br />
+      <div class="project-strip__links">
+        <a
+          class="project-strip__link"
+          href="https://joeoregan.github.io/Angular-Tetris/"
+          target="_blank"
+          rel="noopener"
+        >
+          Play Tetris ↗
+        </a>
+        <br />
+        <a
+          class="project-strip__link"
+          href="https://github.com/JoeORegan/Angular-Tetris"
+          target="_blank"
+          rel="noopener"
+        >
+          Source Code ↗
+        </a>
+      </div>
+    </div>
+
+    <div class="project-strip__media">
+      <img
+        src="@/assets/tetris/cover.jpg"
+        alt="Tetris gameplay cover"
         class="project-strip__image"
       />
     </div>

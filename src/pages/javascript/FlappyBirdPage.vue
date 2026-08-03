@@ -29,7 +29,7 @@
 
     <section class="project-image-wrap">
       <img
-        src="/images/flappybird/cover.png"
+        src="@/assets/flappybird/cover.png"
         alt="Flappy Bird gameplay screenshot"
         class="project-image"
       />

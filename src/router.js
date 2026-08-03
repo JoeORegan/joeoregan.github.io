@@ -6,6 +6,7 @@ import JavaScriptPage from "./pages/JavaScriptPage.vue";
 import SpaceQuestPage from "./pages/javascript/SpaceQuestPage.vue";
 import AntibodyPage from "./pages/javascript/AntibodyPage.vue";
 import FlappyBirdPage from "./pages/javascript/FlappyBirdPage.vue";
+import TetrisPage from "./pages/angular/TetrisPage.vue";
 import AngularPage from "./pages/AngularPage.vue";
 import Cocos2dxPage from "./pages/Cocos2dxPage.vue";
 import SdlPage from "./pages/SdlPage.vue";
@@ -40,10 +41,26 @@ const routes = [
                 component: FlappyBirdPage,
                 meta: { title: "Flappy Bird" },
             },
+            {
+                path: "tetris",
+                name: "javascript-tetris",
+                component: TetrisPage,
+                meta: { title: "Tetris" },
+            },
         ],
     },
 
-    { path: "/angular", name: "angular", component: AngularPage, meta: { title: "Angular" } },
+    {
+        path: "/angular", name: "angular", component: AngularPage, meta: { title: "Angular" },
+        children: [
+            {
+                path: "tetris",
+                name: "javascript-tetris",
+                component: TetrisPage,
+                meta: { title: "Tetris" },
+            },
+        ],
+    },
     { path: "/cocos2dx", name: "cocos2dx", component: Cocos2dxPage, meta: { title: "Cocos2D-X" } },
     { path: "/sdl", name: "sdl", component: SdlPage, meta: { title: "SDL" } },
     { path: "/raylib", name: "raylib", component: RaylibPage, meta: { title: "Raylib" } },

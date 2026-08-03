@@ -29,7 +29,7 @@
 
     <section class="project-image-wrap">
       <img
-        src="/images/antibody/cover.png"
+        src="@/assets/antibody/cover.jpg"
         alt="Antibody gameplay screenshot"
         class="project-image"
       />
