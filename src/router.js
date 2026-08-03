@@ -4,6 +4,8 @@ import HomePage from "./pages/HomePage.vue";
 import UnityPage from "./pages/UnityPage.vue";
 import JavaScriptPage from "./pages/JavaScriptPage.vue";
 import SpaceQuestPage from "./pages/javascript/SpaceQuestPage.vue";
+import AntibodyPage from "./pages/javascript/AntibodyPage.vue";
+import FlappyBirdPage from "./pages/javascript/FlappyBirdPage.vue";
 import AngularPage from "./pages/AngularPage.vue";
 import Cocos2dxPage from "./pages/Cocos2dxPage.vue";
 import SdlPage from "./pages/SdlPage.vue";
@@ -21,10 +23,22 @@ const routes = [
         meta: { title: "JavaScript" },
         children: [
             {
+                path: "antibody",
+                name: "javascript-antibody",
+                component: AntibodyPage,
+                meta: { title: "Antibody" },
+            },
+            {
                 path: "spacequest",
                 name: "javascript-spacequest",
                 component: SpaceQuestPage,
                 meta: { title: "SpaceQuest" },
+            },
+            {
+                path: "flappybird",
+                name: "javascript-flappybird",
+                component: FlappyBirdPage,
+                meta: { title: "Flappy Bird" },
             },
         ],
     },
