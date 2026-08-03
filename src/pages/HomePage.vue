@@ -24,6 +24,15 @@
       >
         Play Antibody JS ↗
       </a>
+      <br />
+      <a
+        class="project-strip__link"
+        href="https://github.com/JoeORegan/JS-Antibody"
+        target="_blank"
+        rel="noopener"
+      >
+        Source Code ↗
+      </a>
     </div>
 
     <div class="project-strip__media">
@@ -54,6 +63,15 @@
       >
         Play Space Quest ↗
       </a>
+      <br />
+      <a
+        class="project-strip__link"
+        href="https://github.com/JoeORegan/JS-SpaceQuest"
+        target="_blank"
+        rel="noopener"
+      >
+        Source Code ↗
+      </a>
     </div>
 
     <div class="project-strip__media">
@@ -73,6 +91,10 @@
         and classic one-button controls.
       </p>
 
+      <RouterLink class="project-strip__link" to="/javascript/flappybird">
+        View Flappy Bird page →
+      </RouterLink>
+      <br />
       <div class="project-strip__links">
         <a
           class="project-strip__link"

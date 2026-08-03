@@ -63,38 +63,3 @@
     </section>
   </article>
 </template>
-
-<style scoped>
-.project-page {
-  display: grid;
-  gap: 1rem;
-}
-
-.project-header h2 {
-  margin: 0 0 0.25rem 0;
-}
-
-.project-subtitle {
-  margin: 0;
-  opacity: 0.9;
-}
-
-.project-meta p {
-  margin: 0.25rem 0;
-}
-
-.project-image-wrap {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 0.75rem;
-}
-
-.project-image {
-  width: 100%;
-  max-width: 920px;
-  border-radius: 6px;
-  display: block;
-  margin: 0 auto;
-}
-</style>
