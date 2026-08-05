@@ -10,6 +10,7 @@ import SpaceGamePage from "./pages/javascript/SpaceGamePage.vue";
 import TetrisPage from "./pages/angular/TetrisPage.vue";
 import AngularPage from "./pages/AngularPage.vue";
 import Cocos2dxPage from "./pages/Cocos2dxPage.vue";
+import Cocos2dxSpaceGamePage from "./pages/cocos2dx/SpaceGamePage.vue";
 import SdlPage from "./pages/SdlPage.vue";
 import RaylibPage from "./pages/RaylibPage.vue";
 import AboutPage from "./pages/AboutPage.vue";
@@ -28,55 +29,67 @@ const routes = [
                 path: "antibody",
                 name: "javascript-antibody",
                 component: AntibodyPage,
-                meta: { title: "Antibody" },
+                meta: { title: "Antibody" }
             },
             {
                 path: "spacequest",
                 name: "javascript-spacequest",
                 component: SpaceQuestPage,
-                meta: { title: "SpaceQuest" },
+                meta: { title: "SpaceQuest" }
             },
             {
                 path: "flappybird",
                 name: "javascript-flappybird",
                 component: FlappyBirdPage,
-                meta: { title: "Flappy Bird" },
-            },
-            {
-                path: "tetris",
-                name: "javascript-tetris",
-                component: TetrisPage,
-                meta: { title: "Tetris" },
+                meta: { title: "Flappy Bird" }
             },
             {
                 path: "spacegame",
                 name: "javascript-spacegame",
                 component: SpaceGamePage,
-                meta: { title: "Space Game" },
-            },
-        ],
+                meta: { title: "Space Game" }
+            }
+        ]
     },
 
     {
-        path: "/angular", name: "angular", component: AngularPage, meta: { title: "Angular" },
+        path: "/angular",
+        name: "angular",
+        component: AngularPage,
+        meta: { title: "Angular" },
         children: [
             {
                 path: "tetris",
-                name: "javascript-tetris",
+                name: "angular-tetris",
                 component: TetrisPage,
-                meta: { title: "Tetris" },
-            },
-        ],
+                meta: { title: "Tetris" }
+            }
+        ]
     },
-    { path: "/cocos2dx", name: "cocos2dx", component: Cocos2dxPage, meta: { title: "Cocos2D-X" } },
+
+    {
+        path: "/cocos2dx",
+        name: "cocos2dx",
+        component: Cocos2dxPage,
+        meta: { title: "Cocos2D-X" },
+        children: [
+            {
+                path: "spacegame",
+                name: "cocos2dx-spacegame",
+                component: Cocos2dxSpaceGamePage,
+                meta: { title: "Cocos2D-X Space Game" }
+            }
+        ]
+    },
+
     { path: "/sdl", name: "sdl", component: SdlPage, meta: { title: "SDL" } },
     { path: "/raylib", name: "raylib", component: RaylibPage, meta: { title: "Raylib" } },
-    { path: "/about", name: "about", component: AboutPage, meta: { title: "About" } },
+    { path: "/about", name: "about", component: AboutPage, meta: { title: "About" } }
 ];
 
 const router = createRouter({
     history: createWebHashHistory("/"),
-    routes,
+    routes
 });
 
 router.afterEach((to) => {
