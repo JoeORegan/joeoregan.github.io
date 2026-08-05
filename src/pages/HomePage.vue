@@ -49,7 +49,7 @@
       <h2>Space Quest</h2>
       <p>
         Arcade-style JavaScript space shooter focused on movement, collisions,
-        waves, and score progression.
+        waves, and score progression. Based on Space Game (below) from Ray Wenderlich's Kodeco Cocos2d-x tutorial.
       </p>
       <RouterLink class="project-strip__link" to="/javascript/spacequest">
         View Space Quest page →
@@ -78,6 +78,47 @@
       <img
         src="@/assets/spacequest/cover.png"
         alt="Space Quest cover art"
+        class="project-strip__image"
+      />
+    </div>
+  </section>
+
+  <!-- NEW: Space Game -->
+  <section class="project-strip">
+    <div class="project-strip__content">
+      <h2>Space Game</h2>
+      <p>
+        JavaScript/HTML5 Canvas space shooter based on the Kodeco Cocos2d-x
+        tutorial, featuring parallax scrolling, collisions, audio, and win/lose
+        states.
+      </p>
+      <RouterLink class="project-strip__link" to="/javascript/spacegame">
+        View Space Game page →
+      </RouterLink>
+      <br />
+      <a
+        class="project-strip__link"
+        href="https://joeoregan.github.io/JS-SpaceGame/"
+        target="_blank"
+        rel="noopener"
+      >
+        Play Space Game ↗
+      </a>
+      <br />
+      <a
+        class="project-strip__link"
+        href="https://github.com/JoeORegan/JS-SpaceGame"
+        target="_blank"
+        rel="noopener"
+      >
+        Source Code ↗
+      </a>
+    </div>
+
+    <div class="project-strip__media">
+      <img
+        src="@/assets/spacegame/cover.jpg"
+        alt="Space Game cover art"
         class="project-strip__image"
       />
     </div>
@@ -129,8 +170,8 @@
     <div class="project-strip__content">
       <h2>Tetris</h2>
       <p>
-        TypeScript remake of Tetris with canvas gameplay, score tracking,
-        and classic one-button controls.
+        TypeScript remake of Tetris with canvas gameplay, score tracking, and
+        classic one-button controls.
       </p>
 
       <RouterLink class="project-strip__link" to="/angular/tetris">

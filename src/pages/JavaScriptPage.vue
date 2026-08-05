@@ -10,6 +10,9 @@
       <RouterLink class="subnav-link" to="/javascript/spacequest"
         >SpaceQuest</RouterLink
       >
+      <RouterLink class="subnav-link" to="/javascript/spacegame"
+        >Space Game</RouterLink
+      >
       <RouterLink class="subnav-link" to="/javascript/flappybird"
         >Flappy Bird</RouterLink
       >

@@ -6,6 +6,7 @@ import JavaScriptPage from "./pages/JavaScriptPage.vue";
 import SpaceQuestPage from "./pages/javascript/SpaceQuestPage.vue";
 import AntibodyPage from "./pages/javascript/AntibodyPage.vue";
 import FlappyBirdPage from "./pages/javascript/FlappyBirdPage.vue";
+import SpaceGamePage from "./pages/javascript/SpaceGamePage.vue";
 import TetrisPage from "./pages/angular/TetrisPage.vue";
 import AngularPage from "./pages/AngularPage.vue";
 import Cocos2dxPage from "./pages/Cocos2dxPage.vue";
@@ -46,6 +47,12 @@ const routes = [
                 name: "javascript-tetris",
                 component: TetrisPage,
                 meta: { title: "Tetris" },
+            },
+            {
+                path: "spacegame",
+                name: "javascript-spacegame",
+                component: SpaceGamePage,
+                meta: { title: "Space Game" },
             },
         ],
     },
