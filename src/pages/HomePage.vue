@@ -49,7 +49,8 @@
       <h2>Space Quest</h2>
       <p>
         Arcade-style JavaScript space shooter focused on movement, collisions,
-        waves, and score progression. Based on Space Game (below) from Ray Wenderlich's Kodeco Cocos2d-x tutorial.
+        waves, and score progression. Based on Space Game (below) from Ray
+        Wenderlich's Kodeco Cocos2d-x tutorial.
       </p>
       <RouterLink class="project-strip__link" to="/javascript/spacequest">
         View Space Quest page →
@@ -83,7 +84,6 @@
     </div>
   </section>
 
-  <!-- NEW: Space Game -->
   <section class="project-strip">
     <div class="project-strip__content">
       <h2>Space Game</h2>
@@ -119,6 +119,45 @@
       <img
         src="@/assets/spacegame/cover.jpg"
         alt="Space Game cover art"
+        class="project-strip__image"
+      />
+    </div>
+  </section>
+
+  <section class="project-strip">
+    <div class="project-strip__content">
+      <h2>Ninja Game</h2>
+      <p>
+        JavaScript/HTML5 Canvas ninja shooter based on the Kodeco cCocos2d-x
+        tutorial, featuring mouse aiming and spinning projectiles.
+      </p>
+      <RouterLink class="project-strip__link" to="/javascript/ninjagame">
+        View Ninja Game page →
+      </RouterLink>
+      <br />
+      <a
+        class="project-strip__link"
+        href="https://joeoregan.github.io/JS-NinjaGame/"
+        target="_blank"
+        rel="noopener"
+      >
+        Play Ninja Game ↗
+      </a>
+      <br />
+      <a
+        class="project-strip__link"
+        href="https://github.com/JoeORegan/JS-NinjaGame"
+        target="_blank"
+        rel="noopener"
+      >
+        Source Code ↗
+      </a>
+    </div>
+
+    <div class="project-strip__media">
+      <img
+        src="@/assets/ninjagame/cover.png"
+        alt="Ninja Game cover art"
         class="project-strip__image"
       />
     </div>

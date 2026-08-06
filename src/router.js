@@ -7,10 +7,12 @@ import SpaceQuestPage from "./pages/javascript/SpaceQuestPage.vue";
 import AntibodyPage from "./pages/javascript/AntibodyPage.vue";
 import FlappyBirdPage from "./pages/javascript/FlappyBirdPage.vue";
 import SpaceGamePage from "./pages/javascript/SpaceGamePage.vue";
+import NinjaGamePage from "./pages/javascript/NinjaGamePage.vue";
 import TetrisPage from "./pages/angular/TetrisPage.vue";
 import AngularPage from "./pages/AngularPage.vue";
 import Cocos2dxPage from "./pages/Cocos2dxPage.vue";
 import Cocos2dxSpaceGamePage from "./pages/cocos2dx/SpaceGamePage.vue";
+import Cocos2dxNinjaGamePage from "./pages/cocos2dx/NinjaGamePage.vue";
 import SdlPage from "./pages/SdlPage.vue";
 import SdlAntibodyPage from "./pages/sdl/AntibodyPage.vue";
 import RaylibPage from "./pages/RaylibPage.vue";
@@ -55,6 +57,12 @@ const routes = [
                 name: "javascript-spacegame",
                 component: SpaceGamePage,
                 meta: { title: "Space Game" }
+            },
+            {
+                path: "ninjagame",
+                name: "javascript-ninjagame",
+                component: NinjaGamePage,
+                meta: { title: "Ninja Game" }
             }
         ]
     },
@@ -85,6 +93,12 @@ const routes = [
                 name: "cocos2dx-spacegame",
                 component: Cocos2dxSpaceGamePage,
                 meta: { title: "Cocos2D-X Space Game" }
+            },
+            {
+                path: "ninjagame",
+                name: "cocos2dx-ninjagame",
+                component: Cocos2dxNinjaGamePage,
+                meta: { title: "Cocos2D-X Ninja Game" }
             }
         ]
     },

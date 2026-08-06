@@ -6,6 +6,9 @@
     <nav class="subnav" aria-label="Cocos2D-X project pages">
       <RouterLink class="subnav-link" to="/cocos2dx/spacegame">
         Space Game
+      </RouterLink> 
+      <RouterLink class="subnav-link" to="/cocos2dx/ninjagame">
+        Ninja Game
       </RouterLink>
     </nav>
 

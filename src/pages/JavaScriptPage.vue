@@ -13,6 +13,9 @@
       <RouterLink class="subnav-link" to="/javascript/spacegame"
         >Space Game</RouterLink
       >
+      <RouterLink class="subnav-link" to="/javascript/ninjagame"
+        >Ninja Game</RouterLink
+      >
       <RouterLink class="subnav-link" to="/javascript/flappybird"
         >Flappy Bird</RouterLink
       >
